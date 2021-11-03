@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:background="#ffff00"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <RadioGroup
+        android:id="@+id/Rgroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/Rdored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="red"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Rdogreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="green"/>
+        <RadioButton
+            android:id="@+id/Rdoblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="blue"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/BtnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:id="@+id/BtnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Baseword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Word"
+            android:layout_alignParentLeft="true"/>
+        <EditText
+            android:id="@+id/Edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="000-0000-0000"
+            android:layout_toRightOf="@+id/Baseword"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/BtnDel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DEL"
+            android:layout_margin="3dp"/>
+        <Button
+            android:id="@+id/BtnEnter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Enter"
+            android:layout_margin="3dp"/>
+        <Button
+            android:id="@+id/BtnCLR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CLR"
+            android:layout_margin="3dp"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
